@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  background: #DDD !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+#alert-msg, #alert-type, #add {
+    margin: 0 4px;
+}
+#alert-msg {
+    min-width: 150px;
+}
+#alert-type {
+    min-width: 70px;
+}
+div#alert-container {
+    margin-top: 15px;
+}
+select {
+    margin-bottom: 0 !important;
+}

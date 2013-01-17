@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div#container.row-fluid
+    input#alert-msg.span2
+    select#alert-type.span1
+      each type, i in types
+        option(value=i) #{type}
+    button#add.btn.btn-primary 新增訊息
+    div#alert-container.span12
+  script#alert-tmpl(type='text/template')
+    div.alert
+      button.close(data-dismiss='alert', type='button') &times;
+      strong <%= title%>
+      |  <%= text%>
